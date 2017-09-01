@@ -17,9 +17,9 @@
 
 
 
-        <h1><?= $singlnew['news_name'];?></h1>
-        <p>Дата публикации: <?= date("d-m-Y H:i:s",strtotime($singlnew['news_date'])); ?><p>
-        <p><?= $singlnew['news_content'];?></p>
+        <h1><?= $news['news_name'];?></h1>
+        <p>Дата публикации: <?= date("d-m-Y H:i:s",strtotime($news['news_date'])); ?><p>
+        <p><?= $news['news_content'];?></p>
 
 
 

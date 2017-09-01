@@ -12,9 +12,9 @@ if (isset($_GET['id'])){
 
     if(isset($data)){
         $news = new News();
-        $singlnew = $news->news_getS($data);
-
-        if(empty($singlnew)){
+        $news = $news->news_getS($data);
+//var_dump($news);
+        if(empty($news)){
             header('Location: /index.php');
             exit;
         }

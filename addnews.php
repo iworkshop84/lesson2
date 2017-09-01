@@ -16,7 +16,7 @@ if(isset($_POST['addnews'])){
     }
 
     if(isset($data['name']) && isset($data['content'])){
-       // news_add($data);
+
         $news = new News();
         $singlnew = $news->news_AddNew($data);
         header('Location: /index.php');
