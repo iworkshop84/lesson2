@@ -11,7 +11,9 @@ if (isset($_GET['id'])){
     }
 
     if(isset($data)){
-        $singlnew = news_getSingle($data);
+        $news = new News();
+        $singlnew = $news->news_getS($data);
+
         if(empty($singlnew)){
             header('Location: /index.php');
             exit;

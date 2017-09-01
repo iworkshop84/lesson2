@@ -18,7 +18,7 @@
 
 
 
-        <?php foreach ($news as $item): ?>
+        <?php foreach ($res as $item): ?>
             <h3><a href="<?= 'single.php?id=' . $item['news_id']?>"><?= $item['news_name']; ?></a></h3>
             <p>Дата публикации: <?= date("d-m-Y H:i:s",strtotime($item['news_date'])); ?><p>
             <p><?= $item['news_content']; ?></p>
